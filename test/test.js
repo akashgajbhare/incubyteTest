@@ -1,9 +1,12 @@
 class StringCalculate {
     add(value) {
         if (!value) return 0;
-        return value
+        if(value){
+            return value.length;
+        }
+       
     }
 }
 
-const calculator = new StringCalculator();
-console.log(calculator.add());
+const calculator = new StringCalculate();
+console.log(calculator.add("12"));
